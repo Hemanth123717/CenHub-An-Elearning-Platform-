@@ -1,0 +1,537 @@
+.mainLoginPage{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+}
+
+.loginPageLeftlayout{
+    /* background-color: red; */
+    background: linear-gradient(35deg, rgb(34, 14, 151) 10%, rgb(23, 9, 100) 40%, rgb(11, 4, 49) 70%);
+    background-color: transparent;
+    display: grid;
+    width: 30%;
+    height: 100dvh;
+    color: white;
+    row-gap: 20px;
+}
+
+.loginPageLeftlayoutTopBut{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.loginPageLeftlayoutDownBut{
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+
+.loginAndSignUpBut{
+    /* transition: 500ms ease-in-out; */
+    width: 20dvh;
+    height: 10%;
+    margin-right: 20%;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    border: none;
+}
+
+.loginPageRightlayout{
+    background-color: rgb(255, 255, 255, 0.9);
+    /* background: url("../../images/cutmLogo.png"); */
+    width: 70%;
+    height: 100%;
+    color: black;
+    justify-items: center;
+    align-content: center;
+}
+
+.cutmLogo{
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoImgTag{
+    width: 10%;
+    height: 10%;
+}
+
+.loginAndSignUpButFalse{
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 20dvh;
+    border-radius: 10px;
+    font-size:medium;
+    font-family: 'Times New Roman', Times, serif;
+    height: 10%;
+    margin-right: 20%;
+    cursor: pointer;
+}
+
+.loginFormDiv{
+    z-index: 2;
+    width: 50%;
+    height: 60%;
+    /* background-color: rgba(0, 128, 0, 0.1); */
+    /* background: url("../../images/cutmLogo.png"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-items: center;
+    /* align-content: center;
+    display: grid;
+    row-gap: 10px; */
+}
+
+.loginHead{
+    font-size:xx-large;
+    font-weight: bolder;
+    height: 15%;
+}
+
+.loginSubHead{
+    font-size:medium;
+    font-weight:200;
+    font-family:'Times New Roman', Times, serif;
+    height: 15%;
+}
+
+.loginForm{
+    display: grid;
+    height: 70%;
+    width: 50%;
+}
+
+.formLoadingLoadingDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLoadingClass{
+    display: grid;
+}
+
+.loginCenIdParentDiv{
+    display: grid;
+    /* height: 50%; */
+}
+
+.loginCenIdDiv{
+    display: grid;
+    height: 50%;
+}
+
+.cenIdLabel, .passwordLabel{
+    width: 100%;
+    height: 50%;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.cenIdInput, .passwordInput{
+    padding: 2px;
+    height: 100%;
+    margin-top: 10px;
+    border: 0;
+    background: transparent;
+    /* border-radius: 5px; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    /* border: 1px solid black; */
+    /* background-color: rgba(230, 238, 247, 0.6); */
+    /* background-color: #D4D7E3; */
+}
+
+.cenIdInput:focus, .passwordInput:focus{
+    padding: 2px;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    /* background-color: rgba(230, 238, 247, 1); */
+    outline: none;
+}
+
+.loginPasswordDiv{
+    display: grid;
+    height: 50%;
+}
+
+.forgotPass{
+    color: blue;
+    text-align: right;
+    cursor: pointer;
+}
+
+.forgotPass:hover{
+    text-decoration: underline;
+}
+
+.signInButDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.signInButtonInput{
+    /* padding: 2px; */
+    width: 100%;
+    height: 55%;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(22, 45, 58, 0.7);
+    cursor: pointer;
+}
+
+.signInButtonInput:focus , .signInButtonInput:hover{
+    background-color: rgba(22, 45, 58, 0.9);
+}
+
+.signUpButtonInput{
+    width: 100%;
+    height: 55%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(22, 45, 58, 0.7);
+    cursor: pointer;
+}
+
+.signUpButtonInput:hover, .signUpButtonInput:focus{
+    background-color: rgba(22, 45, 58, 0.9);
+}
+
+.LoginOrGoogle{
+    margin-top: 20px;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+}
+
+.loginOrDiv{
+    width: 100%;
+}
+
+.loginOtpParentDiv{
+    /* background-color: green; */
+    justify-items: center;
+    align-content: center;
+}
+
+.loginOtpDiv{
+    width: 100%;
+    height: 50%;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    display: grid;
+    gap: 10px;
+    /* position: fixed; */
+}
+
+.LoginOtpLabel{
+    width: 100%;
+    text-align: center;
+}
+
+.VerifyOtpButton{
+    /* padding: 2px; */
+    width: 100%;
+    height: 100%;
+    /* margin-top: 10px; */
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: rgba(22, 45, 58, 0.7);
+    cursor: pointer;
+}
+
+.VerifyOtpButton:focus , .VerifyOtpButton:hover{
+    background-color: rgba(22, 45, 58, 0.9);
+}
+
+.hrLine{
+    border-top: 2px solid rgba(0, 0, 0, 0.4);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.continueWithGoogleButDiv{
+    width: 100%;
+    height: 100%;
+}
+
+.continueWithGoogleButton{
+    /* padding: 2px; */
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    /* font-weight: 600; */
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(230, 238, 247, 1);
+    border: 0;
+    color: black;
+    cursor: pointer;
+}
+
+.continueWithGoogleButton:hover{
+    font-weight: 400;
+    background-color: rgba(230, 238, 247, 0.7);
+}
+
+.signUpFormDiv{
+    width: 50%;
+    height: 60%;
+    /* background-color: rgba(0, 128, 0, 0.1); */
+    justify-items: center;
+    /* align-content: center;
+    display: grid;
+    row-gap: 10px; */
+}
+
+.signUpHead{
+    font-size:xx-large;
+    font-weight: bolder;
+    height: 10%;
+}
+
+.signUpSubHead{
+    font-size:medium;
+    font-weight:200;
+    font-family:'Times New Roman', Times, serif;
+    height: 15%;
+}
+
+.signUpCenIdDiv{
+    display: grid;
+    height: 50%;
+}
+
+.signUpForm{
+    display: grid;
+    height: 70%;
+    width: 60%;
+}
+
+.SignUpCenIdDiv, .singUpEmailDiv, .signUpPhoneNumberDiv, .signUpPasswordDiv{
+    display: grid;
+    height: 50%;
+}
+
+.signUpCenIdInput, .signupPasswordInput , .signupEmailInput, .signupPhoneInput{
+    padding: 2px;
+    height: 100%;
+    margin-top: 10px;
+    /* border-radius: 5px; */
+    border: 0;
+    /* background-color: rgba(230, 238, 247, 0.6); */
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* background-color: #D4D7E3; */
+}
+
+
+.signUpCenIdInput:focus, .signupPasswordInput:focus, .signupEmailInput:focus, .signupPhoneInput:focus{
+    padding: 2px;
+    height: 100%;
+    margin-top: 10px;
+    border: 0;
+    /* border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; */
+    border-radius: 5px;
+    border: 2px solid black;
+    /* background-color: rgba(230, 238, 247, 1); */
+    outline: none;
+}
+
+.custom-select{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    .signUpHead {
+        font-size: large;
+        font-weight: bolder;
+        height: 10%;
+    }
+
+    .signUpSubHead {
+        font-size: medium;
+        font-weight: 200;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10%;
+    }
+
+    .loginFormDiv {
+        z-index: 2;
+        width: 70%;
+        height: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-items: center;
+    }
+
+  .loginPageLeftlayoutTopBut {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+
+    .loginAndSignUpBut {
+        /* transition: 500ms ease-in-out; */
+        width: 20dvh;
+        height: 10%;
+        border-radius: 10px;
+        font-size: larger;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        border: none;
+        margin-right: 5%;
+    }
+
+    .loginAndSignUpButFalse {
+        background-color: transparent;
+        color: white;
+        border: none;
+        width: 20dvh;
+        border-radius: 10px;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10%;
+        margin-right: 5%;
+        cursor: pointer;
+    }
+
+    .loginForm {
+        display: grid;
+        height: 70%;
+        width: 80%;
+    }
+
+    .loginHead{
+        font-size:xx-large;
+        font-weight: bolder;
+        height: 10%;
+    }
+
+    .loginSubHead {
+        font-size: medium;
+        height: 10%;
+    }
+
+    .cutmLogo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile Layout */
+
+@media (max-width: 540px) {
+
+    .signUpFormDiv {
+        width: 90%;
+        height: 60%;
+        justify-items: center;
+    }
+
+    .signUpHead {
+        font-size: large;
+        font-weight: bolder;
+        height: 10%;
+    }
+
+    .signUpSubHead {
+        font-size: small;
+        font-weight: 200;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10%;
+    }
+
+    .loginFormDiv {
+        z-index: 2;
+        width: 70%;
+        height: 60%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-items: center;
+    }
+
+    .loginPageLeftlayout {
+        justify-content: center;
+    }
+
+    .loginPageLeftlayoutTopBut {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .loginPageLeftlayoutDownBut {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+    }
+
+    .loginAndSignUpBut {
+        /* transition: 500ms ease-in-out; */
+        width: 100%;
+        height: 10%;
+        border-radius: 10px;
+        font-size: larger;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        cursor: pointer;
+        border: none;
+    }
+
+    .loginAndSignUpButFalse {
+        background-color: transparent;
+        color: white;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+        height: 10%;
+        margin-right: 20%;
+        cursor: pointer;
+    }
+
+    .loginForm {
+        display: grid;
+        height: 70%;
+        width: 100%;
+    }
+
+    .loginHead{
+        font-size:large;
+        font-weight: bolder;
+        height: 10%;
+    }
+
+    .loginSubHead {
+        font-size: small;
+        height: 15%;
+    }
+}

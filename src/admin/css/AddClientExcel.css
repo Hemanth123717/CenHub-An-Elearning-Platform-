@@ -1,0 +1,77 @@
+/* .loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.progress-bar-container {
+  width: 50%;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.3s;
+} */
+
+
+.excel-upload-container {
+  overflow: scroll;
+  /* height: 80dvh; */
+  width: 90%;
+  height: 80%;
+  padding: 20px;
+}
+
+.excel-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.excel-table th,
+.excel-table td {
+  border: 1px solid #ddd;
+  font-size: xx-small;
+  padding: 8px;
+}
+
+.excel-table th {
+  font-size: small;
+  background-color: #f2f2f2;
+}
+
+.loading-overlay {
+  margin-top: 10px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #eee;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s;
+}
+
+.upload-all-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+}

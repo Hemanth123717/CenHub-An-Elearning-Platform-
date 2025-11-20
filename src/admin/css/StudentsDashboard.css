@@ -1,0 +1,45 @@
+.studentDashboard{
+    color: white;
+    width: 90%;
+    margin-top: 10px;
+    padding: 50px;
+    /* background-color: #18191c; */
+    background-color: transparent;
+    text-align: center;
+    /* overflow: scroll; */
+}
+
+.studentsDashboardSelectDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.studentsDashboardSelectLableDiv{
+    display: flex;
+}
+
+.studentsDashboardLoadingDiv{
+    display: flex;
+    color: white;
+    /* margin-bottom: 20px; */
+}
+
+.studentsDashboardGraphLayout{
+    width: 95%;
+    height: 70dvh;
+    /* background-color: saddlebrown; */
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.StudentsDashboardPlots {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+}

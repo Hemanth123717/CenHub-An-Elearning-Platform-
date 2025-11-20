@@ -1,0 +1,317 @@
+.viewAllClients{
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 80%;
+    border-radius: 20px;
+    /* background-color: green; */
+    /* align-content: center; */
+    font-size: large;
+    justify-items: center;
+    overflow: scroll;
+}
+
+.clientData{
+    /* background-color: rgba(10, 147, 221, 1); */
+    width: 100%;
+    height: 5dvh;
+    justify-items: center;
+    font-size: large;
+    align-content: center;
+    text-align: center;
+    /* margin-top: 10px; */
+}
+
+.clients{
+    background-color: rgba(10, 147, 221, 0.2);
+    border-radius: 5px;
+    /* width: 80%;
+    height: 5dvh; */
+    /* justify-items: center;
+    align-content: center; */
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    overflow: scroll;
+}
+
+.clients:hover{
+    transition: 300ms;
+    background-color: rgba(10, 147, 221, 0.7);
+    cursor: pointer;
+}
+
+.client_list{
+    display: flex;
+    width: 90%;
+    height: 5dvh;
+}
+
+.list_data{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.listCount{
+    padding-left: 2%;
+    width: 8%;
+    overflow: scroll;
+    text-align: center;
+    justify-items: center;
+    margin: 0;
+    align-content: center;
+    justify-items: center;
+}
+
+.listName{
+    width: 80%;
+    text-align: center;
+    margin: 0;
+    align-content: center;
+    justify-items: center;
+}
+
+.editBut{
+    width: 5%;
+    align-content: center;
+    justify-items: center;
+}
+
+.removeBut{
+    width: 5%;
+    align-content: center;
+    justify-items: center;
+}
+
+.clientEditPanelVisible{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    /* transform: translate3d(-2.5dvh, -24.8dvh, 0); */
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    /* filter: opacity(0.5); */
+    /* cursor: pointer; */
+    z-index: 2;
+    transition: 500ms ease;
+}
+
+.clientEditPanelHide{
+    position: fixed;
+    width: 0;
+    height: 0;
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    transition: 500ms ease-in-out;
+}
+
+.backgroundBlur{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur(10px) opacity(1);
+    cursor: pointer;
+}
+
+.ClientFormDivVisible{
+    /* position: fixed; */
+    background-color: white;
+    width: 60%;
+    height: 65%;
+    position: inherit;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    left: 25%;
+    top: 25%;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.4), 5px -5px 10px 0 rgba(0, 0, 0, 0.4), -5px -5px 10px 0 rgba(0, 0, 0, 0.4), -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.ClientFormDivHide{
+    width: 0;
+    height: 0;
+}
+
+.inputDisabled{
+    cursor: not-allowed;
+}
+
+.clientEditUpdatedVisible{
+    position: fixed;
+    /* background-color: green; */
+    width: 20%;
+    height: 20%;
+    /* border-radius: 10px; */
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.1), 10px -10px 20px 0px rgba(0, 0, 0, 0.1);
+    /* background-color: transparent; */
+    background-color: white;
+    z-index: 1;
+    color: green;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);    
+    font-size: larger;
+    font-weight: bold;
+    transition: 100ms ease-in-out;
+}
+
+.clientEditUpdatedHidden{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);  
+    border-radius: 10px;
+    text-align: center;
+    align-content: center;
+    opacity: 0;
+    z-index: 0;
+    width: 0;
+    height: 0;
+    transition: 100ms ease-in-out;
+}
+
+.editClientFormDivVisible{
+    width: 90%;
+    height: 80%;
+    /* background-color: aqua; */
+    display: grid;
+}
+
+.editClientFormDivHide{
+    width: 0;
+    height: 0;
+    /* transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%; */
+    position: fixed;
+    opacity: 0;
+}
+
+.editClientFormVisible{
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .editClientFormhide{
+    width: 0;
+    height: 0;
+} */
+
+.editClientLabelHide{
+    width: 0;
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+.editClientInputHide{
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    opacity: 0;
+    width: 0;
+}
+
+.editClientLabelVisible{
+    width: 50%;
+}
+
+.editClientInput{
+    width: 50%;
+}
+
+.saveButtonVisible{
+    background-color: rgba(10, 147, 221, 0.2);
+    border-radius: 5px;
+    width: 20%;
+    height: 4dvh;
+    border: 0;
+}
+
+.saveButtonVisible:hover{
+    background-color: rgba(10, 147, 221, 1);
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 0 0 10px 0 black, 0 0 10px 0 rgba(128, 128, 128, 0.3);
+}
+
+.saveButtonHide{
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    opacity: 0;
+}
+
+.changeClientsStatusDiv{
+    display: flex;
+    width: 90%;
+    border-radius: 10px;
+    height: 5dvh;
+    /* background-color: gray; */
+    margin-bottom: 20px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.changeClientsStatusDiv:hover{
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+.statusActivePendingRemove{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.statusActivePendingRemove:hover{
+    transition: 300ms ease-in-out;
+    background-color: rgba(10, 147, 221, 0.7);
+}
+
+.statusActivePendingRemove:first-child{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.statusActivePendingRemove:last-child{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.statusActivePendingRemovedActive{
+    /* background-color: green; */
+    background-color: rgba(10, 147, 221, 1);
+}
+
+.statusActivePendingRemovePassive{
+    /* background-color: red; */
+    background-color: rgba(10, 147, 221, 0.2);
+}
+
+
+/* .saveButtonVisible:hover{
+    background-color: rgba(0, 128, 0, 0.7);
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 0 0 10px 0 black, 0 0 10px 0 rgba(128, 128, 128, 0.3);
+} */

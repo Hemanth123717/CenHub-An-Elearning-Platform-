@@ -1,0 +1,47 @@
+#version: '3.8'
+#
+#services:
+#  db:
+#    image: postgres:15
+#    container_name: cenhub_db
+#    restart: always
+#    environment:
+#      POSTGRES_DB: cencode
+#      POSTGRES_USER: cencode_user
+#      POSTGRES_PASSWORD: CenCode@2025@#!
+#    ports:
+#      - "5432:5432"
+#    volumes:
+#      - pgdata:/var/lib/postgresql/data
+#
+#  app:
+#    build: .
+#    container_name: cenhub_app
+#    depends_on:
+#      - db
+#    environment:
+#      DATASOURCE_URL: jdbc:postgresql://centurion-postgres.cutmap.ac.in:5432/cencode
+#      DATASOURCE_USER: cencode_user
+#      DATASOURCE_PASSWORD: CenCode@2025@#!
+#    ports:
+#      - "8080:8080"
+#    restart: always
+#
+#volumes:
+#  pgdata:
+
+
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: cenhub_app_backend
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://centurion-postgres.cutmap.ac.in:5432/cencode
+
+      SPRING_DATASOURCE_USERNAME: cencode_user
+      SPRING_DATASOURCE_PASSWORD: CenCode@2025@#!
+    ports:
+      - "8080:8080"
+    restart: always

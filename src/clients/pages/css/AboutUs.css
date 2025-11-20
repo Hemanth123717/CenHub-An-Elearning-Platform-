@@ -1,0 +1,44 @@
+.about-container {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(249, 249, 249, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.about-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: rgb(109, 153, 197); */
+  color: rgb(129, 180, 232);
+  /* color: white; */
+}
+
+.about-container h2 {
+  margin-top: 30px;
+  color: rgb(129, 180, 232);
+  /* color: white; */
+}
+
+.about-container p,
+.about-container ul {
+  font-size: 16px;
+  /* color: #333; */
+  color: white;
+  line-height: 1.6;
+}
+
+.about-container ul {
+  padding-left: 20px;
+}
+
+.about-container a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.about-container a:hover {
+  text-decoration: underline;
+}

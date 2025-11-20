@@ -1,0 +1,868 @@
+/* html{
+    width: 100%;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .rootClass{
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homeRoot{
+    width: 100%;
+    display: block !important;
+  }
+  
+  .body{
+    width: 100%;
+    height: 100dvh;
+    margin: 0;
+    padding: 0;
+    background: rgb(188, 187, 187);
+  }
+   */
+
+
+.mainPage{
+    overflow: hidden;
+    display: flex;
+    /* filter: opacity(0.1); */
+    font-family:'Times New Roman', Times, serif;
+    /* font-size: x-large; */
+    background: rgb(188, 187, 187);
+    color: black;
+    font-weight: bold;
+  }
+
+  #root{
+    /* background-color: white; */
+  }
+  
+  .mainPageBlur{
+    transition: 1s;
+    filter: blur(1px) opacity(0.5);
+  }
+  
+  .mainPageUnBlur{
+    transition: 1s;
+    filter: blur(0) opacity(1);
+  }
+  
+  .leftLayout{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 20%;
+    height: 99.8dvh;
+  }
+  
+  /* .leftLayoutBlur{
+    filter: blur(1px) opacity(0.5);
+  } */
+  
+  .serverCutmLogo{
+    margin-top: 10dvh;
+    width: 100%;
+    height: 70dvh;
+    background: url("../../images/Cutm-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* margin: 1ddvh; */
+    /* padding: 1ddvh; */
+  }
+  
+  /* p{
+    height: 13dvh;
+    width: 100%;
+    margin: 0;
+    z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+  } */
+  
+  .Title{
+    font-size: clamp(3dvh, 4dvh, 6dvh);
+    /* margin-bottom: 4dvh; */
+    /* padding-top: 3dvh; */
+    padding-bottom: 4dvh;
+  }
+  
+  .adminTitle{
+    padding-left: 2dvh;
+    font-size: x-large;
+  }
+  
+  .rightLayout{
+    /* align-content: center; */
+    /* overflow: scroll; */
+    width: 80%;
+    height: 99.8dvh;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 2px;
+  }
+  
+  .top_layout{
+    /* position: static; */
+    display: flex;
+    background: white;
+    width: 100%;
+    height: 7dvh;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-left: 10%; */
+  }
+  /* .top_layout p{
+    padding-left: 3%;
+  } */
+  
+  .search-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/search-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    transform: translate3d(150px, 0, 0);
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .searchBarInput {
+    /* padding: 8px; */
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+
+  .panelsDiv{
+    display: flex;
+    width: 50%;
+    height: 5dvh;
+    justify-content: space-between;
+  }
+
+  .panelButton{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 20px;
+    border: none;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    /* border: 1px solid black; */
+  }
+
+  .serverLogoutBut{
+    width: 100%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  /* .panelButton:hover{
+    transition: 100ms ease-in-out;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    border: none;
+  } */
+
+  .panelAnchor{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .bottom_layout{
+    overflow: scroll;
+    margin-top: 3dvh;
+    width: 85%;
+    height: 80dvh;
+    padding: 10px;
+    justify-items: center;
+    /* justify-content: space-between; */
+  }
+  .Admin_list{
+    transition: 500ms none;
+    width: 100%;
+    display: flex;
+    margin-top: 1dvh;
+  }
+  .list{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: white;
+    width: 95%;
+    padding: 1dvh;
+    padding-left: 2dvh;
+    padding-right: 2dvh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    /* dr */
+  }
+  
+  .list:hover{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: white;
+    width: 95.5%;
+    box-shadow: 11px 11px 11px 0px rgba(0, 0, 0, 0.3);
+    /* dr */
+  }
+  
+  .listCount{
+    width: 20%;
+    height: auto;
+  }
+  
+  .listName{
+    width: 85%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .editBut, .removeBut{
+    /* width: min(5%, 5dvh); */
+    margin-left: min(2dvh);
+    /* padding-right: ; */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .editPasswordDone{
+    position: absolute;
+    top: 2dvh;
+    left: 50%;
+    transform: translate3d(6dvh, 0, 0);
+  }
+  
+  .editPasswordDoneVisible{
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.5);
+    transition: opacity 500ms ease, transform 500ms ease;
+    border-radius: 5px;
+    opacity: 1;
+    width: 15dvh;
+    height: 3dvh;
+    border: 1px solid green;
+    z-index: 2;
+  }
+  
+  .editPasswordDoneHidden{
+    opacity: 0;
+    /* transform: translateY(-10px); */
+    z-index: -1;
+    transition: opacity 300ms ease, transform 300ms ease;
+  }
+
+  .addAdminExcelPanel{
+    height: 50dvh;
+    width: 100dvh;
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    /* transform: translate3d(25%, -35%, 0); */
+    /* z-index: 2; */
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 10%;
+    cursor:auto;
+    /* visibility: visible; */
+    /* margin-left: 15%;
+    margin-top: 8%; */
+    align-content: center;
+    /* align-items: center; */
+    transition: 1s ease;
+    justify-items: center;
+    box-shadow: 10px 10px 20px 0 rgba(128, 128, 128, 0.3), 10px -10px 20px 0 rgba(128, 128, 128, 0.3), -10px -10px 20px 0 rgba(128, 128, 128, 0.3), -10px 10px 20px 0 rgba(128, 128, 128, 0.3);
+  }
+
+  .addAdminExcelPanelHidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+    position: relative;
+  }
+  
+  .editPanel{
+    /* width: 1200px;
+    height: 500px; */
+    height: 50dvh;
+    width: 100dvh;
+    position: relative;
+    background-color: white;
+    opacity: 1;
+    /* transform: translate3d(25%, -35%, 0); */
+    /* z-index: 2; */
+    border-radius: 5px;
+    margin-top: 5%;
+    margin-left: 10%;
+    cursor:auto;
+    /* visibility: visible; */
+    /* margin-left: 15%;
+    margin-top: 8%; */
+    align-content: center;
+    /* align-items: center; */
+    transition: 1s ease;
+    justify-items: center;
+    box-shadow: 10px 10px 20px 0 rgba(128, 128, 128, 0.3), 10px -10px 20px 0 rgba(128, 128, 128, 0.3), -10px -10px 20px 0 rgba(128, 128, 128, 0.3), -10px 10px 20px 0 rgba(128, 128, 128, 0.3);
+  }
+  
+  .editPanelHidden{
+    width: 0;
+    height: 0;
+    opacity: 0;
+    /* visibility: hidden; */
+    position: relative;
+    /* transition: 1s ease-in; */
+    /* display: none; */
+    /* transform: translate3d(30%, -30%, 0); */
+  
+  }
+
+  .addAdminsExcelDiv{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .addAdminsExcelDiv:hover{
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .editMain{
+    /* filter: blur(20px); */
+    z-index: 2;
+    width: 100%;
+    height: 99.7dvh;
+    background-color: transparent;
+    justify-content: center;
+    position: fixed;
+    justify-items: center;
+    align-content: center;
+    color: black;
+    /* transform: translate(); */
+    /* transform: translate3d(60%, -10%, 0); */
+  }
+
+  .addAdminExcelMainDiv{
+    z-index: 2;
+    width: 100%;
+    height: 99.7dvh;
+    background-color: transparent;
+    justify-content: center;
+    position: fixed;
+    justify-items: center;
+    align-content: center;
+    color: black;
+  }
+
+  .addAdminExcelVisible{
+    transition: 500ms ease;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .addAdminExcelHidden{
+    /* z-index: -10; */
+    transition: 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translate(700%,20%,0); */
+    transform: translate3d(60%, -10%, 0);
+    /* width: 0;
+    height: 0; */
+    width: 90%;
+    height: 2px;
+  }
+  
+  .openEditHidden{
+    transition: 500ms ease;
+    visibility: hidden;
+    opacity: 0;
+    /* transform: translate(700%,20%,0); */
+    transform: translate3d(60%, -10%, 0);
+    /* width: 0;
+    height: 0; */
+    width: 90%;
+    height: 2px;
+  }
+  
+  
+  .openEditVisible{
+    transition: 500ms ease;
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+  .blurDivVisible{
+    cursor: pointer;
+    background-color: white;
+    filter: blur(1px) opacity(0.5);
+    z-index: 0;
+    position:fixed;
+    width: 20%;
+    height: 100dvh;
+    transform: translate3d(0, -93%, 0);
+  }
+  
+  /* .blurDivHidden{
+    width: 0;
+    height: 0;
+  } */
+  
+  .pendingCount{
+    font-size:large;
+    color: red;
+    background-color: transparent;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 65%;
+    filter: drop-shadow(3px 6px 9px);
+  }
+  
+  .noPendingDivVisible{
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+  }
+  
+  .noPendingDivHidden{
+    width: 0;
+    height: 0;
+    z-index: 1;
+    transform: translate3d(-10dvh, 0, 0);
+  }
+  
+  .requestDiv{
+    width: 100%;
+    height: 7dvh;
+    z-index: 2;
+  }
+  
+  .requestBox{
+    /* width: max(40px) min(7vh); */
+    z-index: 2;
+    width: 20%;
+    height: max(6dvh, 25%);
+    margin-left: 5px;
+    /* position: fixed; */
+    /* transform: translate3d(2px, 1450%, 0); */
+    cursor: pointer;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: 100ms ease;
+  }
+  
+  .requestBoxClose{
+    /* transition: 100ms ease; */
+    /* background: url("./images/requestCancel_icon.png"); */
+    background: url("../../images/requestCancel_icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .requestBoxOpen{
+    /* transition: 100ms ease; */
+    background: url("../../images/request_icon.png");
+    /* background: url("./images/request_icon.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .requestList{
+    padding: 1dvh;
+    padding-bottom: 1dvh;
+    justify-items: center;
+    position: fixed;
+    width: 28dvh;
+    height: 50dvh;
+    background-color:white;
+  }
+  
+  .requestListVisible{
+    overflow-y: scroll;
+    cursor: auto;
+    transform: translate3d(15%, -100%, 0);
+    transition: 500ms ease;
+    border-radius: 5px;
+    opacity: 1;
+  }
+  
+  .requestListHidden{
+    transform: translate3d(0, -10dvh, 0);
+    transition: 500ms ease;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  
+  /* .adminListPadding{
+    padding: 20px;
+  } */
+  
+  .pendingListHide{
+    opacity: 0;
+    transform: translate3d(-10dvh, 0 , 0);
+    width: 0;
+    height: 0;
+    /* z-index: -1; */
+    /* transform: translate3d(0, -50%, 0); */
+  }
+  
+  .pendingList{
+    /* margin: 1dvh; */
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.3);
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+    width: 90%;
+    /* display: flex; */
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.1), 2px 2px 20px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid white ;
+    border-radius: 5px;
+  }
+  
+  .pendingListNameDiv{
+    background-color: #0056b3;
+    /* height: 50%; */
+    align-content: center;
+    justify-items: center;
+    width: 100%;
+  }
+  
+  .pendingListStatusDiv{
+    display: flex;
+    width: 100%;
+  }
+  
+  .pendingListName{
+    width: 100%;
+    overflow-x: auto;
+    height: auto;
+    text-align: center;
+  }
+  
+  .pendingListAccept{
+    cursor: pointer;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: green;
+    
+  }
+  
+  .pendingListReject{
+    cursor: pointer;
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color: red;
+  }
+  
+  .Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .form_row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .form_group {
+    display: flex;
+    flex-direction: column;
+    width: 30%;  
+  }
+  .form_group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* margin-left: -100px */
+  }
+  
+  .form_group_input {
+    width: 100%;
+    height: 4dvh;
+    border-radius: 5px;
+    /* margin-left: -130px; */
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    font-size: 16px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form_editbut {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: -40px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .form_editbut:hover {
+    background-color: #0056b3;
+  }
+  
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+
+  /* Responsive */
+
+  /* @media (max-width: 1024px) {
+  .leftLayout {
+    width: 25%;
+  }
+  .rightLayout {
+    width: 75%;
+  }
+  .panelsDiv {
+    width: 80%;
+  }
+} */
+
+@media (max-width: 768px) {
+  .Title{
+    font-size: medium;
+    /* padding-bottom: 4dvh; */
+  }
+
+  .adminTitle {
+      padding-left: 2dvh;
+      font-size: medium;
+  }
+
+  .panelAnchor {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .requestBox {
+      z-index: 2;
+      width: 50%;
+      height: max(6dvh, 25%);
+      margin-left: 5px;
+      /* position: fixed; */
+      /* transform: translate3d(2px, 1450%, 0); */
+      cursor: pointer;
+      filter: drop-shadow(2px 4px 6px black);
+      transition: 100ms ease;
+  }
+
+  .search-bar {
+      display: flex;
+      padding-left: 20px;
+      align-items: center;
+  }
+  /* .mainPage {
+    display: flex;
+  }
+
+  .leftLayout,
+  .rightLayout {
+    width: 100%;
+    height: auto;
+  }
+
+  .top_layout {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .panelsDiv {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .panelButton {
+    width: 100%;
+  }
+
+  .bottom_layout {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listCount, .listName, .editBut, .removeBut {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .editPanel {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+
+  .searchBarInput {
+    width: 100%;
+  } */
+}
+
+/* Mobile Layout */
+
+@media (max-width: 480px) {
+
+  .leftLayout {
+      background-color: rgb(255, 255, 255);
+      color: black;
+      width: 20%;
+      height: 99.8dvh;
+  }
+
+  .rightLayout {
+      width: 100%;
+      height: 99.8dvh;
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-left: 2px;
+  }
+
+  .requestBox {
+      z-index: 2;
+      width: 50%;
+      height: max(6dvh, 25%);
+      margin-left: 5px;
+      /* position: fixed; */
+      /* transform: translate3d(2px, 1450%, 0); */
+      cursor: pointer;
+      filter: drop-shadow(2px 4px 6px black);
+      transition: 100ms ease;
+  }
+
+  .Title{
+    font-size: x-small;
+    /* padding-bottom: 4dvh; */
+  }
+
+  .searchBarInput {
+      /* padding: 8px; */
+      width: 100%;
+      padding-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+  }
+
+  .search-bar {
+      display: flex;
+      padding-left: 5px;
+      align-items: center;
+  }
+
+  .search-icon {
+      width: 20px;
+      height: 20px;
+      background-image: url(/src/server/images/search-icon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: fixed;
+      transform: translate3d(70px, 0, 0);
+  }
+
+  .adminTitle {
+      padding-left: 2dvh;
+      font-size: small;
+  }
+
+  .serverLogoutBut {
+    width: 100%;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xx-small;
+}
+
+  .panelAnchor {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: xx-small;
+    font-weight: bold;
+  }
+  /* .Title {
+    font-size: 3dvh;
+    padding-bottom: 2dvh;
+  }
+
+  .adminTitle {
+    font-size: medium;
+  }
+
+  .serverLogoutBut,
+  .panelAnchor {
+    font-size: small;
+  }
+
+  .editPasswordDoneVisible {
+    width: 100%;
+    font-size: small;
+  }
+
+  .pendingCount {
+    font-size: medium;
+  }
+
+  .serverCutmLogo {
+    background-size: 90% auto;
+    height: 30dvh;
+  } */
+}

@@ -1,0 +1,59 @@
+.test-instructions-container {
+  max-width: 700px;
+  margin: 50px auto;
+  margin-top: 0;
+  padding: 30px;
+  background-color: rgba(249, 249, 249, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.test-instructions-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  /* color: #333; */
+  color: white;
+}
+
+.test-instructions-container ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+.test-instructions-container li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  /* color: #444; */
+  color: white;
+}
+
+.start-test-warning {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ffeeba;
+  font-weight: 500;
+}
+
+.start-test-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-test-button:hover {
+  background-color: #45a049;
+}

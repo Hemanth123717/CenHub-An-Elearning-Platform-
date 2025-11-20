@@ -1,0 +1,51 @@
+.Home{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.adminHome{
+    width: 100%;
+    height: 100%;
+}
+
+.head{
+    color: white;
+    width: 100%;
+    height: 80vh;
+    align-content: center;
+    justify-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: xxx-large;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.visible{
+    opacity: 1;
+    transition: 2s ease-in;
+}
+
+.subTitle{
+    opacity: 70%;
+    font-size: small;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px) {
+    /* *{
+        font-size: small;
+    } */
+}

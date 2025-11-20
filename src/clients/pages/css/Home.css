@@ -1,0 +1,452 @@
+.homeDiv{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.userProfileLogout{
+    position: fixed;
+    background-color: transparent;
+    top: 5%;
+    left: 90%;
+    cursor: pointer;
+    filter: drop-shadow(1px 2px 3px);
+    color: white;
+  }
+
+  .userProfileLogout:hover{
+    filter: drop-shadow(2px 4px 6px);
+  }
+
+.userProfile{
+    position: fixed;
+    background-color: transparent;
+    top: 5%;
+    left: 85%;
+    cursor: pointer;
+    filter: drop-shadow(1px 2px 3px);
+    color: white;
+  }
+
+  .userProfile:hover{
+    filter: drop-shadow(2px 4px 6px);
+  }
+
+  .userProfileDataDiv{
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 15%;
+    cursor: pointer;
+    overflow: scroll;
+    /* padding: 10px; */
+    height: 10dvh;
+    top: 10%;
+    left: 80%;
+    justify-items: flex-start;
+    align-content: center;
+  }
+
+  .userProfileDataDiv{
+    cursor:text;
+  }
+
+  .userProfileData{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    display: flex;
+  }
+
+  .userProfileDataLightText{
+    font-weight: 100;
+  }
+
+
+  .clientPanelsDiv{
+        position: fixed;
+        background-color: transparent;
+        filter: drop-shadow(1px 2px 3px);
+        top: 5%;
+        left: 68%;
+        cursor: pointer;
+        display: flex;
+        /* background-color: rgba(217, 217, 217, 0.05); */
+        border-radius: 20px;
+        width: 15%;
+        margin-right: 10px;
+    }
+
+    /* .adminPanelsButton:first-child:hover{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border: 1px solid rgba(217, 217, 217, 0.15);
+    }
+
+    .adminPanelsButton:last-child:hover{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        border: 1px solid rgba(217, 217, 217, 0.15);
+    } */
+
+    .clientPanelsButton{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+    }
+
+    .clientPanelsAnchor{
+        text-decoration: none;
+        font-size: medium;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .clientPanelsAnchor:hover{
+        filter: drop-shadow(2px 4px 6px);
+    }
+
+  .loadingMessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .dashboardLoadingMessage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+  }
+
+.home{
+    /* width: 50dvh;
+    height: 50dvh; */
+    /* background-color: rgba(100, 100, 100, 0.6); */
+    /* background: url("../../../Images/cenhublogo.png");
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    /* height: 100vh; */
+    margin: 0;
+    position: relative;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: 400ms ease-in-out;
+    z-index: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.homeUnClicked{
+    background: url("../../../Images/cenhublogo.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    /* height: 100vh; */
+    margin: 0;
+    width: 50dvh;
+    height: 50dvh;
+    /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px 7px rgba(0, 0, 0, 0.3); */
+    /* background-image: url("../../../Images/cenhublogo.png");
+    background-repeat: no-repeat; */
+
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.homeClicked{
+    background: url("../../../Images/cenhublogo.png");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    /* height: 100vh; */
+    margin: 0;
+    width: 15dvh;
+    height: 15dvh;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+.homeNav:hover{
+    transition: 400ms ease-in-out;
+    color: aliceblue;
+    width: 30dvh;
+    height: 30dvh;
+    background-color: rgba(255, 0, 0, 0.3);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    filter: brightness(1);
+    width: 31dvh;
+    height: 31dvh;
+}
+
+.homeNav{
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+    color: aliceblue;
+    width: 30dvh;
+    height: 30dvh;
+    filter: brightness(0.8);
+    /* background-color: rgba(255, 0, 0, 0.3); */
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3), 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+.homeEventsDivVisible{
+    transform: translate3d(-50%, -130%, 0) rotate(45deg);
+}
+
+.homeEventsDivVisible::before{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    background-image:  radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%), url('../../../images/events.jpg') ;
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.loginTooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    z-index: 9999;
+  }
+
+.eventsTooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    z-index: 9999;
+  }
+
+  .testSeriesTooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    z-index: 9999;
+  }
+
+  .dashboardTooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    z-index: 9999;
+  }
+
+  .aboutUsTooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    pointer-events: none;
+    white-space: nowrap;
+    display: none;
+    z-index: 9999;
+  }
+
+  .hover-target {
+    display: inline-block;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: 100px;
+    cursor: pointer;
+  }
+
+
+/* .eventsImgVisible{
+    width: 140%;
+    height: 140%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    transform: rotate(-45deg);
+    transition: 400ms ease-in-out;
+}
+
+.eventsImgHide{
+    width: 0;
+    height: 0;
+    transition: 400ms ease-in-out;
+    z-index: -1;
+    position: fixed;
+    transform: translate3d(0, 0, 0) rotate(45deg);
+} */
+
+.homeTestSeriesVisible{
+    transform: translate3d(-50%, 30%, 0) rotate(45deg);
+}
+
+.homeTestSeriesVisible::before{
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%), url('../../../images/testSeries.jpg');
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeAboutUsVisible{
+    transform: translate3d(30%, -50%, 0) rotate(45deg);
+}
+
+.homeAboutUsVisible::before{
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%), url('../../../images/aboutUs.jpg');
+    width: 140%;
+    height: 140%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeDashboardVisible{
+    transform: translate3d(-130%, -50%, 0) rotate(45deg);
+}
+
+.homeDashboardVisible::before{
+    content: '';
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%),url('../../../images/dashboard.jpg');
+    width: 140%;
+    height: 140%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeEventsDivHide{
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%),url('../../../images/events.jpg');
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeTestSeriesHide{
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgba(23, 21, 32, 1) 100%),url('../../../images/testSeries.jpg');
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeAboutUsHide{
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgb(23, 21, 32) 100%),url('../../../images/aboutUs.jpg');
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+
+.homeDashboardHide{
+    position: absolute;
+    background-image: radial-gradient(50% 50% at 50% 50%,rgba(217, 217, 217, 0.33) 0%,rgb(23, 21, 32) 100%),url('../../../images/dashboard.jpg');
+    width: 145%;
+    height: 145%;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transition: 400ms ease-in-out;
+}
+

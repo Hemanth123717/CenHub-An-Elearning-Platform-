@@ -1,0 +1,484 @@
+.clientDiv{
+    color: white;
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    margin-top: 8vh;
+    color: black;
+    position: fixed;
+    /* opacity: 0;
+    transition: 2s; */
+}
+
+.visiblebackgroundDiv{
+    opacity: 1;
+    transition: 1s;
+}
+
+.hiddenbackgroundDiv{
+    opacity: 0;
+}
+
+.clientDiv .backgroundDiv .centerDiv{
+    width: 80%;
+    height: 65%;
+    /* padding-top: 5%; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.3), -5px 5px 30px 0px rgba(0, 0, 0, 0.3);
+    /* margin-top: 5%; */
+    /* border: 2px solid black; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+.clientDiv .backgroundDiv .centerDiv .flexDiv{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 10vh;
+}
+
+.clientAdd{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 255, 0.5); */
+    align-content: center;
+    border-top-left-radius: 20px;
+    /* border-top-right-radius: 20px; */
+    cursor: pointer;
+}
+
+.clientAddTrue{
+    background-color: rgba(0, 0, 255, 1);
+}
+
+.clientAddFalse{
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.clientRemove{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    align-content: center;
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 20px;
+    cursor: pointer;
+}
+
+.clientRemoveTrue{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.clientRemoveFalse{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+.backgroundDiv{
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    opacity: 90%;
+    justify-items: center;
+    align-content:flex-start;
+    padding-top: 4%;
+}
+
+.clientAddRemove{
+    /* text-decoration: none; */
+    color: white;
+}
+
+.clientDiv .backgroundDiv .centerDiv .dataDiv{
+    width: 100%;
+    height: 85%;
+    justify-items:center;
+    align-content:flex-start;
+    text-align: center;
+}
+
+.clientDiv .backgroundDiv .centerDiv .dataDiv .clientForm{
+    width: 80%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    align-content: flex-start;
+}
+
+/* .clientDiv .backgroundDiv .centerDiv .dataDiv .clientForm .nameInput{
+    width: 70%;
+} */
+
+input{
+    color: black;
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.clientDiv .backgroundDiv .centerDiv .dataDiv .clientForm select{
+    width: 64%;
+    height: 35px;
+    text-align: center;
+    margin-top: 20px;
+    /* opacity: 0.3; */
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mailDiv , .genderDiv{
+    width: 100%;
+}
+
+.genderDiv{
+    align-content: center;
+}
+
+.divSec1{
+    width: 100%;
+    margin-top: 30px;
+    text-align: justify;
+    display: grid;
+}
+
+.divSec1 .nameInput{
+    width: 80%;
+}
+
+.divSec1 .nameLabel{
+    padding: 0;
+    margin: 0 10px;
+}
+
+.divSec2 .mailDiv{
+    display: grid;
+}
+
+.mailLabel{
+    width: fit-content;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.divSec2{
+    display: flex;
+    width: 100%;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+
+.divSec3{
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+.divSec4{
+    width: 100%;
+    display: flex;
+}
+
+.numberDiv{
+    width: 100%;
+    text-align: justify;
+    display: grid;
+}
+
+
+.passwordDiv{
+    width: 100%;
+    text-align: justify;
+    display: grid;
+    /* justify-content: center;
+    margin-right: 20px; */
+    align-items: flex-start;
+}
+
+.passwordDiv .passwordLabel{
+    width: fit-content;
+    margin: 0 10px;
+    /* padding: 0; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
+}
+
+.numberDiv .numberLabel{
+    margin: 0;
+    padding: 0;
+}
+
+.numberDiv .numberInput{
+    margin: 0;
+    padding: 1px 2px;
+}
+
+.idDiv{
+    text-align: justify;
+    display: grid;
+    width: 100%;
+}
+
+.idLabel{
+    padding: 0;
+    margin: 0 10px;
+}
+
+.butDiv{
+    width: 100%;
+    /* height: 30px; */
+    text-align: justify;
+    /* justify-items: center; */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addClientBut{
+    width: 65%;
+    height: 50%;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addClientBut:hover{
+    /* width: 65%;
+    height: 50%;
+    margin-top: 10px; */
+    transition: 500ms ease-in;
+    background-color: rgba(0, 0, 255, 1);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.3), -5px 5px 20px 0px rgba(0, 0, 0, 0.3);
+    /* color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer; */
+}
+
+.addClientExcel{
+    /* margin-left: 1px; */
+    width: 65%;
+    height: 50%;
+    margin-top: 10px;
+    background-color: rgba(0, 128, 0, 0.5);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addClientExcel:hover{
+    /* margin-left: 1px; */
+    /* width: 65%;
+    height: 50%;
+    margin-top: 10px; */
+    transition: 500ms ease-in;
+    background-color: rgba(0, 128, 0, 1);
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.3), -5px 5px 20px 0px rgba(0, 0, 0, 0.3);
+    /* color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer; */
+}
+
+input:focus{
+    opacity: 1;
+    color: black;
+}
+
+input[type=number]::-webkit-inner-spin-button, ::-webkit-outer-spin-button { 
+  /* -webkit-appearance: none; 
+  margin: 0; */
+  display: none;
+}
+
+
+.showPass{
+    background: url("../../Images/show.jpg");
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 60%;
+    /* width: 1.8%;
+    height: 3.5%; */
+    background-size: contain;
+    /* position: fixed; */
+    /* transform: translate3d(29.8dvh, 4.9dvh, 0);
+    filter: contrast(100%); */
+    /* border-radius: 50%; */
+}
+
+.showPassDiv{
+    align-content: center;
+    justify-items: center;
+    width: 1.8%;
+    height: 3.5%;
+    /* background-size: contain; */
+    position: fixed;
+    transform: translate3d(29.8dvh, 4.9dvh, 0);
+    filter: contrast(100%);
+    /* background-color: aqua; */
+}
+
+.showPass:hover{
+    cursor: pointer;
+}
+
+.removeForm{
+    width: 100%;
+    /* background-color: red; */
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-content: center;
+    gap: 2dvh;
+}
+
+.cenIdDiv{
+    /* display: grid; */
+    /* margin-top: 20%; */
+    width: max-content;
+    height: fit-content;
+    /* background-color:aqua; */
+}
+
+.confirmCenIdDiv{
+    /* margin-bottom: 20%; */
+    width: max-content;
+    height: fit-content;
+    /* background-color: green; */
+}
+
+.removeButDiv{
+    width: 10dvh;
+    height: 5dvh;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.addCenIdInput, .confirmCenIdInput{
+    margin: 10px;
+    width: 50dvh;
+}
+
+.removeCenIdLabel, .removeConfirmCenIdLabel{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 50dvh;
+    text-align: justify;
+}
+
+.addNewClientVisible::before{
+    content: "New Client Added";
+    color: rgba(0, 128, 0, 0.9);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.addNewClientVisible{
+    /* background-color: rgba(0, 128, 0, 0.9); */
+    position: fixed;
+    opacity: 1;
+    transform: translate3d(90dvh, 5%, 0);
+    z-index: 1;
+    width: 10%;
+    height: 3%;
+    text-align: center;
+    align-content: center;
+    /* box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5), 2px -2px 10px 0 rgba(0, 0, 0, 0.5); */
+    border-radius: 5px;
+}
+
+.addNewClientHidden{
+    /* z-index: -1; */
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.removeClientVisible::before{
+    content: "Client Removed";
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.removeClientVisible{
+    /* background-color: rgba(128, 0, 0, 0.9); */
+    position: fixed;
+    opacity: 1;
+    transform: translate3d(90dvh, 5%, 0);
+    z-index: 1;
+    width: 10%;
+    height: 3%;
+    text-align: center;
+    align-content: center;
+    /* box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5), 2px -2px 10px 0 rgba(0, 0, 0, 0.5); */
+    border-radius: 5px;
+}
+
+.removeClientHidden{
+    opacity: 0;
+    /* z-index: -1; */
+    width: 0;
+    height: 0;
+}
+
+.loadingScreenDivVisible{
+    animation: loadingAnimation 2s infinite ease-in-out;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    /* transition: 500ms; */
+}
+
+@keyframes loadingAnimation {
+    0%{
+        transition: 200ms;
+        font-size: xx-small;
+        width: 0%;
+    }
+    25%{
+        transition: 200ms;
+        font-size: x-small;
+        width: 25%;
+    }
+    50%{
+        transition: 200ms;
+        font-size: small;
+        width: 50%;
+    }
+    75%{
+        transition: 200ms;
+        font-size:medium;
+        width: 75%;
+    }
+    100%{
+        transition: 200ms;
+        font-size: large;
+        width: 100%;
+    }
+}
+
+.loadingScreenDivVisible::before{
+    content: "Loading";
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}

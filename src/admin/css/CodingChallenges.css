@@ -1,0 +1,62 @@
+.CodingPage{
+    margin-top: 40px;
+    width: 100%;
+    height: 75dvh;
+    /* background-color: white; */
+    align-content: center;
+    justify-items: center;
+    color: white;
+}
+
+.eventUrlImage{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+}
+
+.eventsCodingPage{
+  width: 80%;
+  height: 100%;
+  /* background-color: red; */
+}
+
+.contests{
+    /* border: 2px solid white; */
+    width: 80%;
+    height: fit-content;
+    display: block;
+    overflow-y: scroll;
+}
+.contest{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(40deg, black, black, gray);
+    /* padding: 150px; */
+    border-radius: 20px;
+    display: inline-table;
+    margin-top: 50px;
+    align-content: center;
+    justify-items: center;
+  }
+  .contest-Data {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  .contest-button {
+    width: 500px;
+    height: 88px;
+    border: 0;
+    border-radius: 50px;
+    background: black;
+    color: white;
+  }
+
+  .butGradient{
+    background-image: linear-gradient(40deg, gold, gray);
+    width: fit-content;
+    border-radius: 50px;
+  }

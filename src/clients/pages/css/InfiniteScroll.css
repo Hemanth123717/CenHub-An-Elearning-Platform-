@@ -1,0 +1,97 @@
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: black; */
+    background-color: rgb(23, 21, 32);
+}
+
+.marquee-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    /* background-color: black; */
+    background-color: rgb(23, 21, 32);
+    padding: 10px 0;
+    position: fixed;
+    z-index: -1;
+    filter: blur(3px) opacity(0.4);
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.marquee-container::selection{
+    background-color: transparent;
+}
+
+.blurLayer{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(23, 21, 32);
+    position: fixed;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.marquee {
+    height: 25%;
+    display: flex;
+    margin-top: .5%;
+    gap: 10px;
+    width: max-content;
+    animation: scroll 60s linear infinite;
+    z-index: -1;
+}
+
+.marquee_right{
+    height: 25%;
+    display: flex;
+    margin-top: .5%;
+    gap: 10px;
+    width: max-content;
+    animation: scroll_right 60s linear infinite;
+}
+
+.marquee_right img{
+    width: auto;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.marquee img {
+    width: auto; 
+    height: 100%;
+    border-radius: 10px;
+}
+
+@keyframes scroll_right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* .marquee.animate {
+  animation: scroll 20s linear infinite;
+}
+
+.marquee_right.animate {
+  animation: scroll_right 20s linear infinite;
+} */

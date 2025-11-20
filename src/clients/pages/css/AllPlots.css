@@ -1,0 +1,44 @@
+/* General container for all charts */
+.dashBoardDoughnutGraph {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  /* Card container for each chart */
+  .chart-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .chart-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .chart-title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Responsive grid */
+  @media (min-width: 768px) {
+    .dashBoardDoughnutGraph {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .dashBoardDoughnutGraph {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
